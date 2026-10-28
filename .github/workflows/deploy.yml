@@ -1,0 +1,43 @@
+# Publishes the website to GitHub Pages every time something changes on `main`.
+# Progress and errors are visible in the repository's "Actions" tab.
+
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allows a manual re-publish from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one publish at a time; a newer change replaces one still waiting
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Copy only the files that belong on the public site
+      - name: Collect site files
+        run: |
+          mkdir _site
+          cp -r index.html favicon.svg css js img _site/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

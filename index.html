@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stefan Flikweert — Furniture &amp; Object Design</title>
+  <meta name="author" content="Stefan Flikweert">
+  <meta name="description" content="Stefan Flikweert designs furniture from the construction up. Shelving System 01, a raw steel prototype — the first object in an ongoing practice.">
+  <meta property="og:title" content="Stefan Flikweert — Furniture &amp; Object Design">
+  <meta property="og:description" content="Construction becomes character.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Apply the saved or system theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="site-header__name">Stefan Flikweert</a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="Sections">
+          <a href="#work" class="label">Work</a>
+          <a href="#process" class="label">Process</a>
+          <a href="#philosophy" class="label">Philosophy</a>
+          <a href="#about" class="label">About</a>
+          <a href="#contact" class="label">Contact</a>
+        </nav>
+        <a href="#contact" class="label site-nav__mobile">Contact</a>
+        <button type="button" class="label theme-toggle" data-theme-toggle>Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- Hero -->
+    <section class="hero grid">
+      <div class="hero__intro">
+        <div>
+          <p class="label hero__kicker">Furniture &amp; Object Design</p>
+          <h1 class="display hero__title">Stefan<br>Flikweert</h1>
+        </div>
+        <div class="hero__bottom">
+          <p class="hero__tagline">Construction becomes character.</p>
+          <div class="scroll-hint">
+            <div class="scroll-hint__track"><div class="scroll-hint__line"></div></div>
+            <span class="label">Scroll</span>
+          </div>
+        </div>
+      </div>
+      <figure class="hero__figure">
+        <div class="hero__frame">
+          <img src="img/hero-img-light.png" alt="Shelving System 01, frontal view — untreated steel" class="hero__img show-light" loading="lazy">
+          <img src="img/hero-img-dark.png" alt="Shelving System 01, frontal view — untreated steel" class="hero__img show-dark" loading="lazy">
+        </div>
+        <figcaption class="caption-row">
+          <span class="label">Shelving System 01</span>
+          <span class="label">Raw steel — 2026</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- 01 Work -->
+    <section id="work" class="section">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">01</span>
+        <span class="label section-head__title">Selected work</span>
+      </div>
+      <div class="grid work">
+        <div class="work__intro">
+          <h2 class="display work__title">Shelving<br>System 01</h2>
+          <p class="label work__meta">Prototype — 2026</p>
+          <p class="work__text muted">The first piece in an ongoing exploration of structure, material and colour.</p>
+        </div>
+        <div class="work__turntable">
+          <figure class="turntable" data-turntable>
+            <div class="turntable__stage" tabindex="0" role="slider" aria-label="Rotate Shelving System 01 — drag or use the arrow keys" aria-valuemin="0" aria-valuemax="90" aria-valuenow="45" aria-valuetext="45°">
+              <span class="label turntable__status">Loading</span>
+            </div>
+            <figcaption class="turntable__bar">
+              <span class="label">Drag to rotate</span>
+              <div class="turntable__track"><div class="turntable__marker"></div></div>
+              <span class="label turntable__angle">45°</span>
+            </figcaption>
+            <div class="turntable__options">
+              <button type="button" class="label option" data-theme-set="light" aria-pressed="true">Light</button>
+              <button type="button" class="label option" data-theme-set="dark" aria-pressed="false">Dark</button>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo gallery__1">
+          <img src="img/photos/shelving-01-1.jpeg" alt="Shelving System 01 standing in a living room with records on display" loading="lazy">
+          <figcaption>
+            <span class="label photo__title">Context</span>
+            <span class="photo__desc muted">Furniture becomes part of the space.</span>
+          </figcaption>
+        </figure>
+        <figure class="photo gallery__2">
+          <img src="img/photos/shelving-01-6.jpeg" alt="Close-up of the folded steel connection between two shelf modules" loading="lazy">
+          <figcaption>
+            <span class="label photo__title">Construction &amp; time</span>
+            <span class="photo__desc muted">The object begins to change.</span>
+          </figcaption>
+        </figure>
+        <figure class="photo gallery__3">
+          <img src="img/photos/shelving-01-3.jpeg" alt="The empty shelving system showing its modular steel structure" loading="lazy">
+          <figcaption>
+            <span class="label photo__title">The structure</span>
+            <span class="photo__desc muted">The system revealed.</span>
+          </figcaption>
+        </figure>
+        <figure class="photo gallery__4">
+          <img src="img/photos/shelving-01-5.jpeg" alt="The shelving system holding records, a plant and a lava lamp" loading="lazy">
+          <figcaption>
+            <span class="label photo__title">Modular system</span>
+            <span class="photo__desc muted">A structure designed to adapt.</span>
+          </figcaption>
+        </figure>
+        <figure class="photo gallery__5">
+          <img src="img/photos/shelving-01-4.jpeg" alt="Upper shelves with plant, lava lamp and records" loading="lazy">
+          <figcaption>
+            <span class="label photo__title">In use</span>
+            <span class="photo__desc muted">The object shaped by the things it holds.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 Project -->
+    <section class="section">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">02</span>
+        <span class="label section-head__title">Project</span>
+      </div>
+      <div class="grid split">
+        <dl class="specs">
+          <div class="hairline"><dt class="label">Year</dt><dd>2026</dd></div>
+          <div class="hairline"><dt class="label">Material</dt><dd>Untreated steel</dd></div>
+          <div class="hairline"><dt class="label">Construction</dt><dd>Modular steel construction</dd></div>
+          <div class="hairline"><dt class="label">Function</dt><dd>Storage / display</dd></div>
+          <div class="hairline"><dt class="label">Status</dt><dd>Prototype / first edition</dd></div>
+        </dl>
+        <div class="prose">
+          <p class="display prose__lead">A piece of furniture that ages with its designer.</p>
+          <p class="muted">Shelving System 01 is built from bent steel sheet that locks into itself. The folds that give each panel its strength are left visible; the joints are where you can read how the piece stands up.</p>
+          <p class="muted">The steel is untreated on purpose. It will oxidise, mark and darken with use. I am keeping this prototype, and I intend to watch it change — alongside the practice it started. It is not presented as a finished product, but as the first documented object in a body of work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Process -->
+    <section id="process" class="section">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">03</span>
+        <span class="label section-head__title">Process</span>
+      </div>
+      <p class="display process__lead">Designer and maker. The prototype is not a step towards the design — it is part of it.</p>
+      <ol class="process">
+        <li class="hairline">
+          <span class="label">01</span>
+          <h3>Idea<span class="arrow"> →</span></h3>
+          <p class="muted">A question about structure, not a picture of a result.</p>
+          <div class="placeholder"><span class="label">Photo to come — idea</span></div>
+        </li>
+        <li class="hairline">
+          <span class="label">02</span>
+          <h3>Drawing<span class="arrow"> →</span></h3>
+          <p class="muted">Proportion and connection, worked out by hand and on screen.</p>
+          <div class="placeholder"><span class="label">Photo to come — drawing</span></div>
+        </li>
+        <li class="hairline">
+          <span class="label">03</span>
+          <h3>Prototype<span class="arrow"> →</span></h3>
+          <p class="muted">Cut, bent and assembled in the workshop.</p>
+          <div class="placeholder"><span class="label">Photo to come — prototype</span></div>
+        </li>
+        <li class="hairline">
+          <span class="label">04</span>
+          <h3>Testing<span class="arrow"> →</span></h3>
+          <p class="muted">Loaded, lived with, taken apart again.</p>
+          <div class="placeholder"><span class="label">Photo to come — testing</span></div>
+        </li>
+        <li class="hairline">
+          <span class="label">05</span>
+          <h3>Refinement<span class="arrow"> →</span></h3>
+          <p class="muted">What the making revealed goes back into the drawing.</p>
+          <div class="placeholder"><span class="label">Photo to come — refinement</span></div>
+        </li>
+        <li class="hairline">
+          <span class="label">06</span>
+          <h3>Object</h3>
+          <p class="muted">A piece that carries the traces of how it got here.</p>
+          <div class="placeholder"><span class="label">Photo to come — object</span></div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- 04 Philosophy (full-width band) -->
+  <section id="philosophy" class="section section--band">
+    <div class="container">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">04</span>
+        <span class="label section-head__title">Philosophy</span>
+      </div>
+      <div class="grid philosophy">
+        <p class="display philosophy__quote">Rather than hiding how a piece is made, its construction becomes part of its character.</p>
+        <div class="swatches" aria-hidden="true">
+          <span class="swatch swatch--oxide"></span>
+          <span class="swatch swatch--signal"></span>
+          <span class="swatch swatch--ochre"></span>
+          <span class="swatch swatch--slate"></span>
+        </div>
+      </div>
+      <button type="button" class="label manifesto-toggle" aria-expanded="false" aria-controls="manifesto" data-manifesto-toggle>Read the full manifesto +</button>
+      <div id="manifesto" class="manifesto" hidden>
+        <p>I design furniture from the construction up.</p>
+        <p class="manifesto__dim">I am interested in the relationship between material, structure, function and space. Rather than hiding how a piece is made, I believe its construction can become part of its character.</p>
+        <p class="manifesto__dim">My work starts with making. Ideas are developed through drawing, building, testing and using. A prototype is not simply a step towards the final product; it is part of the design process itself.</p>
+        <p class="manifesto__dim">I design functional objects with a sculptural quality. Furniture should serve a purpose, but it can also change the way a space feels, invite curiosity and develop a character of its own.</p>
+        <p class="manifesto__dim">Materials are allowed to show where they come from. Steel can age. Surfaces can change. Colour can bring contrast, warmth and personality.</p>
+        <p class="manifesto__dim">My ambition is to develop a recognisable design language across furniture, objects and eventually the spaces they inhabit.</p>
+        <p>Furniture is where I begin.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- 05 About -->
+    <section id="about" class="section">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">05</span>
+        <span class="label section-head__title">About</span>
+      </div>
+      <div class="grid split">
+        <div class="placeholder about__photo"><span class="label">Photo to come — Stefan in the workshop</span></div>
+        <div class="prose">
+          <p class="display prose__lead">Stefan Flikweert is a furniture designer who builds what he draws.</p>
+          <p class="muted">His work begins at the workbench as much as at the desk. Pieces are figured out by making them — cutting, bending, assembling, then living with the result long enough to understand it.</p>
+          <p class="muted">Shelving System 01 is the first object in that practice. The intention is to develop, piece by piece, a design language coherent enough to carry from furniture into objects, interiors and eventually whole spaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Direction -->
+    <section class="section">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">06</span>
+        <span class="label section-head__title">Direction</span>
+      </div>
+      <div class="direction">
+        <div class="hairline" style="opacity:1"><span class="label">Now</span><p class="display">Furniture</p></div>
+        <div class="hairline" style="opacity:.78"><span class="label">Later</span><p class="display">Objects</p></div>
+        <div class="hairline" style="opacity:.56"><span class="label">Later</span><p class="display">Interiors</p></div>
+        <div class="hairline" style="opacity:.34"><span class="label">Later</span><p class="display">Spaces</p></div>
+      </div>
+      <p class="direction__note muted">Furniture is where I begin. The rest is a direction, not a claim.</p>
+    </section>
+
+    <!-- 07 Contact -->
+    <section id="contact" class="section section--contact">
+      <div class="section-head hairline grid">
+        <span class="label section-head__num">07</span>
+        <span class="label section-head__title">Contact</span>
+      </div>
+      <div class="grid contact">
+        <p class="contact__text">Available for collaborations, commissions and selected projects.</p>
+        <div class="contact__link-wrap">
+          <a href="mailto:stefanflik@outlook.com" class="display contact__link">stefanflik@outlook.com</a>
+        </div>
+      </div>
+      <footer class="site-footer hairline">
+        <span class="label">© 2026 Stefan Flikweert</span>
+        <span class="label">Furniture is where I begin</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
